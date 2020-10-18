@@ -23,6 +23,11 @@
   &.active {
     background-color: $bg-highlight;
   }
+
+  &:hover {
+    background-color: $bg-highlight-light;
+  }
+
   &:last-child {
     border: 0;
   }
