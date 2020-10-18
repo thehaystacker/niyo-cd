@@ -1,0 +1,59 @@
+@import '../../assets/scss/variables';
+
+.wrap-results {
+  max-height: 380px;
+  overflow-y: auto;
+  border-top: 1px solid $light-grey;
+}
+
+.list-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid $light-grey;
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+  &:focus,
+  &.active {
+    background-color: $bg-highlight;
+  }
+  &:last-child {
+    border: 0;
+  }
+}
+
+.txt-xs {
+  font-size: 14px;
+}
+
+.wrap-empty {
+  text-align: center;
+  padding: 4em 0;
+  border-top: 1px solid $light-grey;
+}
+
+.in-item {
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  padding: 5px 0 5px 15px;
+  padding-right: 0;
+  position: relative;
+}
+
+.in-item::before {
+  display: block;
+  content: '';
+  background-color: #2196F3;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-radius: 20px;
+}
